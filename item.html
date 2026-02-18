@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Item — GM China Index</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <a class="back" href="./index.html">← Back to search</a>
+    <h1 id="itemTitle">Loading…</h1>
+    <p class="sub" id="itemSub"></p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Metadata</h2>
+      <dl class="dl" id="meta"></dl>
+    </section>
+
+    <section class="card" id="notesCard" hidden>
+      <h2>Notes</h2>
+      <div class="prose" id="notes"></div>
+    </section>
+
+    <section class="card" id="transCard" hidden>
+      <h2>Transcription / Excerpt</h2>
+      <blockquote class="quote" id="transcription"></blockquote>
+    </section>
+
+    <section class="card">
+      <h2>Citation</h2>
+      <p class="cite" id="citation"></p>
+      <p class="small">Stable link: <span id="stable"></span></p>
+    </section>
+  </main>
+
+  <script src="item.js"></script>
+</body>
+</html>

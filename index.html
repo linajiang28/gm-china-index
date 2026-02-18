@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>China in The Gentleman’s Magazine (1731–1826)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">
+      <h1>China in <em>The Gentleman’s Magazine</em> (1731–1826)</h1>
+      <p class="sub">Searchable index of China/Chinese-related entries with metadata, notes, and transcriptions.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls card">
+      <div class="grid">
+        <div class="field">
+          <label for="q">Keyword search</label>
+          <input id="q" type="search" placeholder="Search title, author, keywords, notes, transcription..." />
+        </div>
+
+        <div class="field">
+          <label for="year">Year</label>
+          <select id="year">
+            <option value="">All</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="month">Month</label>
+          <select id="month">
+            <option value="">All</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="genre">Genre</label>
+          <select id="genre">
+            <option value="">All</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="column">Column / Section</label>
+          <select id="column">
+            <option value="">All</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mention">Major/Minor mention</label>
+          <select id="mention">
+            <option value="">All</option>
+            <option value="Major">Major</option>
+            <option value="Minor">Minor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="clear" class="btn">Clear</button>
+        <div class="meta">
+          <span id="count">0</span> results
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="table-head">
+        <div class="th">Title</div>
+        <div class="th">Date</div>
+        <div class="th">Page</div>
+        <div class="th">Genre</div>
+        <div class="th">Column</div>
+        <div class="th">Mention</div>
+      </div>
+
+      <div id="results" class="table-body" aria-live="polite"></div>
+
+      <div class="footnote">
+        <p>
+          Tip: Click a title to open the item page (stable URL with <code>?id=...</code>).
+        </p>
+      </div>
+    </section>
+
+    <footer class="wrap footer">
+      <p>© <span id="yr"></span> GM China Index. Built as a static DH index (no backend).</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
